@@ -1,19 +1,21 @@
-I set up a CHIP SBC to act as a Web Camera host using motion and motioneye.
+# CHIP Webcam Project
 
-In this repository:
+I set up a [CHIP](http://getchip.com/) SBC to act as a Web Camera host using motion and motioneye.
 
-- index.html belongs in /var/www/html (assuming apache2)
+## In this repository:
 
-- motion_guide.html belongs in /var/www/html
+* index.html belongs in /var/www/html (assuming apache2)
 
-- stats.sh belongs in /usr/lib/cgi-bin
+* motion_guide.html belongs in /var/www/html
 
-- pwrstat executable belongs in /usr/lib/cgi-bin
+* stats.sh belongs in /usr/lib/cgi-bin
 
-Project inspired by the following post on the getchip.com forums:
+* pwrstat executable belongs in /usr/lib/cgi-bin
 
-- https://bbs.nextthing.co/t/build-a-full-featured-security-cam-for-cheap/12573
+## Project inspired by the following post on the getchip.com forums:
 
-The following resource was also extremely helpful:
+* https://bbs.nextthing.co/t/build-a-full-featured-security-cam-for-cheap/12573
 
-- https://github.com/ccrisan/motioneye/wiki/Install-On-Raspbian
+## The following resource was also extremely helpful:
+
+* https://github.com/ccrisan/motioneye/wiki/Install-On-Raspbian
