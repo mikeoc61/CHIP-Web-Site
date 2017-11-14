@@ -10,8 +10,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mikeoc Webcam Page</title>
+
     <style type="text/css" media="screen">
+
   * {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -89,6 +93,8 @@
 
   div.section_header {
     padding: 3px 6px 3px 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #8E9CB2;
     color: #FFFFFF;
     font-weight: bold;
@@ -119,16 +125,21 @@
     color: #DCDFE6;
   }
 
-  </style>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-  img {
-    max-width: 100%;
-    height: auto;
+  .WebCamStill {
+    width: 320px;
+    height: 240px;
+    margin: 10px 10px;
+    padding: 1px;
+    border: 2px solid #021a40;
+    background-color: #CD214F
   }
+
+  A {
+    text-decoration: none;
+  }
+
   </style>
+
 
  </head>
 
@@ -137,13 +148,13 @@
 </style>
 
     <div class="main_page">
+	<br>
         <img src="/icons/openlogo-75.png"/>
-	<br></br>
+	<br><br>
 	<h1>
          C.H.I.P Webcam Page 
 	</h1>
       
-	<br>
         <div class="section_header section_header_red"> </div>
 
         <div class="content_section_text">
@@ -152,9 +163,6 @@
 	      <UL style="list-style-type:none">
 		<LI>
 		<A HREF="./cgi-bin/stats.sh">CHIP System Snapshot</A>
-		<LI>
-		Live Stream: <A HREF="http://mikeoc.ddns.net:8081">
-			Cam 1</A> <A HREF="http://mikeoc.ddns.net:8082"> Cam 2</A>
 		<LI>
 		<A HREF="http://mikeoc.ddns.net:8765">MotionEye Config</A>
 		<LI>
@@ -171,10 +179,16 @@
 
         <div class="section_header section_header_red"> </div>
 
-	<br>
+        <A HREF="http://mikeoc.ddns.net:8081">
+		<img src="http://mikeoc.ddns.net:8765/picture/1/current/" alt="Click for live" class="WebCamStill">
+		</A>
+	<A HREF="http://mikeoc.ddns.net:8082"> 
+        	<img src="http://mikeoc.ddns.net:8765/picture/2/current/" alt="Click for live" class="WebCamStill"> 
+		</A>
 
-        <img src="http://mikeoc.ddns.net:8765/picture/1/current/" width="320" height="240">
-        <img src="http://mikeoc.ddns.net:8765/picture/2/current/" width="320" height="240">
+	<p>Click image(s) to view live camera feed</p>
+
+        <div class="section_header section_header_red"> </div>
 
     	</div>
   </body>
